@@ -1,0 +1,49 @@
+<html>
+    <head>
+    <title>our AP PETA</title>
+ </head>
+<link rel="stylesheet" href="style.css">
+    <body>
+<div class="titlez">
+    <h1>ang ating plano ng pagkilos</h1>
+    <a href="https://baluyut-ian201126.github.io/TLE10T1/" class="tle-hub">TLE HUB</a>
+</div>  
+        
+<div id="imageViewer" onclick="closeImage()">
+    <span class="close">&times;</span>
+    <img id="fullImage">
+</div>
+       
+<div class="action-plan-container">
+    <img src="1.png" class="action-plan-image1" onclick="openImage(this)">
+    <img src="2.png" class="action-plan-image1" onclick="openImage(this)">
+    <img src="3.png" class="action-plan-image1" onclick="openImage(this)">
+    <img src="4.png" class="action-plan-image1" onclick="openImage(this)">
+    <img src="5.png" class="action-plan-image1" onclick="openImage(this)">
+
+<div class="zoom-instruction">
+<p>PRESS TO
+        <br>
+ZOOM IN
+        <br>
+THE PICTURES
+</p>
+        <br> 
+</div>
+</div>
+
+<script>
+    function openImage(image) {
+    var viewer = document.getElementById("imageViewer");
+    var fullImage = document.getElementById("fullImage");
+    fullImage.src = image.src;
+    viewer.classList.add("active");
+}
+    
+function closeImage() {
+    document.getElementById("imageViewer").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
